@@ -1,0 +1,1 @@
+!function(n,o){var t=n.Popover;t.options.dismissible=!0,t.option("dismissible",!0,function(){function n(n){for(var i=t.$target.add(t.$root).get(),e=i.length;e--;)if(i[e]===n||o.contains(i[e],n))return!0;return!1}var t=this,i=o(document),e="click"+t.eventNs;t.on("show",function(){i.off(e).on(e,function(o){n(o.target)||t.hide()})}),t.on("hide",function(){i.off(e)})})}(gmu,gmu.$);

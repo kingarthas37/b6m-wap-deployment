@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>Title</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="http://staticcdn.b5m.com/css/wap/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/wap-search/search_filter.css" />
+</head>
+<body>
+<div id="page">
+	<header class="wap-header">
+		<div class="wap-topbar">
+			<div class="h-left"><a href="javascript:;" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+			<div class="h-center"><h1>筛选</h1></div>
+			<div class="h-right"><a href="javascript:;" class="r-btn">确定</a></div>
+		</div>
+	</header>
+	<section id="contents">
+		<ul class="sf-c">
+	<li class="op price">
+		<div class="s-l"><span class="sf-icon icon-money"></span><span>价格</span></div>
+		<div class="s-c"><span>200-600</span></div>
+		<div class="s-r"><span class="icon-arrow"></span></div>
+	</li>
+	<li class="sub">
+		<ul>
+			<li class="price first"><input type="text" value="" id="sprice" /><span>—</span><input id="eprice" type="text" value="" /></li>
+		</ul>
+	</li>
+	<li class="op">
+		<div class="s-l"><span class="sf-icon icon-class"></span><span>分类</span></div>
+		<div class="s-c"><span>A类</span></div>
+		<div class="s-r"><span class="icon-arrow"></span></div>
+	</li>
+	<li class="sub">
+		<ul>
+			<li data="A" class="first">A类</li>
+			<li data="B">B类</li>
+			<li data="C">C类</li>
+		</ul>
+	</li>
+	<li class="op">
+		<div class="s-l"><span class="sf-icon icon-shop"></span><span>商城</span></div>
+		<div class="s-c"><span>淘宝</span></div>
+		<div class="s-r"><span class="icon-arrow"></span></div>
+	</li>
+	<li class="sub">
+		<ul>
+			<li data="taobao" class="first">淘宝</li>
+			<li data="jingdong">京东</li>
+			<li data="suning">苏宁</li>
+		</ul>
+	</li>
+	<li class="op">
+		<div class="s-l"><span class="sf-icon icon-brand"></span><span>品牌</span></div>
+		<div class="s-c"><span>Nike</span></div>
+		<div class="s-r"><span class="icon-arrow"></span></div>
+	</li>
+	<li class="sub">
+		<ul>
+			<li data="nb" class="first">New Balance</li>
+			<li data="nike">Nike</li>
+			<li data="lining">Li Ning</li>
+		</ul>
+	</li>
+</ul>
+<div class="btn-group">
+	<a href="javascript:;" id="clear-filter">清空</a>
+	<a href="javascript:;" id="submit-btn">确定</a>
+</div>
+
+	</section>
+</div><!-- #page end! -->
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js" charset="UTF-8"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../../scripts/wap-search/filter.js" charset="UTF-8"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.chooseOptionCallback = function(val, txt, el){
+	alert(val+':'+txt)
+};
+window.clearFilterCallback = function(){
+	alert('清除选项！');
+};
+window.WapFilter.init();
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="http://staticcdn.b5m.com/static/public/gmu/assets/??widget/dialog/dialog.css,widget/dialog/dialog.default.css,widget/button/button.css,widget/button/button.default.css" />
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/wap-cart/style.less"/>
+<body>
+    <form id="saveCart" name="saveCart" action="" method="post">
+        <input id="json" name="json"  type="hidden" value="" />
+    </form>
+    <header class="wap-header">
+        <div class="wap-topbar">
+            <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+            <div class="h-center"><h1>我的购物车</h1></div>
+            <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+        </div>
+    </header>
+    <section>
+    	<div class="cart-container">
+        	<div class="cart-header">
+            	<a class="check-all"><em class="icon-checkbox"></em></a>
+                <p>
+                    <span>总计：<b id="price_total" class="red">￥20.50</b></span>
+                </p>
+                <a id="cartSubmit" class="btn-red">去结算</a>
+            </div>
+            <div id="1001" class="cart-items checked">
+            	<a class="check-box"><em class="icon-checkbox"></em><input type="hidden" name="checkbox1001" id="checkbox1001" value="1001"  /></a>
+                <a href="#" class="cart-items-pic" ><img src="http://lorempixum.com/g/60/60" width="60" height="60" /></a>
+                <p><a href="#">珂莱蒂尔Koradio正品女装夏款柜同款气质</a></p>
+                <p>
+                    <span class="grey">颜色：红色</span>
+                    <span class="grey">尺寸：XLL</span>
+                </p>
+                <p class="cart-items-quantity">
+                	<span class="btn-subtraction" data-id="1001">-</span>
+                    <span class="input-box"><input type="text"  value="1" name="quantity1001" id="quantity1001" readonly /></span>
+                    <span class="btn-add" data-id="1001">+</span>
+                </p>
+                <a class="cart-item-dele"><em class="icon-dele"></em></a>
+                <span class="cart-item-price">￥<ins id="price1001">20.50</ins></span>
+            </div>        
+            <div id="1002" class="cart-items">
+            	<a class="check-box"><em class="icon-checkbox"></em><input type="hidden" name="checkbox1002" id="checkbox1002" value="1002"  /></a>
+                <a href="#" class="cart-items-pic" ><img src="http://lorempixum.com/g/60/60" width="60" height="60" /></a>
+                <p><a href="#">珂莱蒂尔Koradio正品女装夏款柜同款气质</a></p>
+                <p>
+                    <span class="grey">颜色：红色</span>
+                    <span class="grey">尺寸：XLL</span>
+                </p>
+                <p class="cart-items-quantity">
+                	<span class="btn-subtraction" data-id="1002">-</span>
+                    <span class="input-box"><input type="text" value="1" name="quantity1002" id="quantity1002" readonly /></span>
+                    <span class="btn-add" data-id="1002">+</span>
+                </p>
+                <a class="cart-item-dele"><em class="icon-dele"></em></a>
+                <span class="cart-item-price">￥<ins id="price1002">10.50</ins></span>
+            </div>        
+            <div id="1003" class="cart-items">
+            	<a class="check-box"><em class="icon-checkbox"></em><input type="hidden" name="checkbox1003" id="checkbox1003" value="1003"  /></a>
+                <a href="#" class="cart-items-pic" ><img src="http://lorempixum.com/g/60/60" width="60" height="60" /></a>
+                <p><a href="#">珂莱蒂尔Koradio正品女装夏款柜同款气质</a></p>
+                <p>
+                    <span class="grey">颜色：红色</span>
+                    <span class="grey">尺寸：XLL</span>
+                </p>
+                <p class="cart-items-quantity">
+                	<span class="btn-subtraction" data-id="1003">-</span>
+                    <span class="input-box"><input type="text" value="1" name="quantity1003" id="quantity1003" readonly /></span>
+                    <span class="btn-add" data-id="1003">+</span>
+                </p>
+                <a class="cart-item-dele"><em class="icon-dele"></em></a>
+                <span class="cart-item-price">￥<ins id="price1003">22.01</ins></span>
+            </div>        
+            <div id="1004" class="cart-items">
+            	<a class="check-box"><em class="icon-checkbox"></em><input type="hidden" name="checkbo1x004" id="checkbox1004" value="1004"  /></a>
+                <a href="#" class="cart-items-pic" ><img src="http://lorempixum.com/g/60/60" width="60" height="60" /></a>
+                <p><a href="#">珂莱蒂尔Koradio正品女装夏款柜同款气质</a></p>
+                <p>
+                    <span class="grey">颜色：红色</span>
+                    <span class="grey">尺寸：XLL</span>
+                </p>
+                <p class="cart-items-quantity">
+                	<span class="btn-subtraction" data-id="1004">-</span>
+                    <span class="input-box"><input type="text" value="1" name="quantity1004" id="quantity1004" readonly></span>
+                    <span class="btn-add" data-id="1004">+</span>
+                </p>
+                <a class="cart-item-dele"><em class="icon-dele"></em></a>
+               <span class="cart-item-price">￥<ins id="price1004">100.01</ins></span>
+            </div>        
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="f-qk-tl">
+            <div class="f-login">
+                <a href="">登录</a>
+                &nbsp;|&nbsp;
+                <a href="">注册</a>
+            </div>
+            <div class="f-go-top">
+                <a href="">回到项部</a>
+            </div>
+        </div>
+        <div class="f-ch-cp">
+            <div class="item">
+                <a href="">标准版</a>
+                &nbsp;|&nbsp;
+                <a href="" class="cur">触屏版</a>
+            </div>
+            <div class="item">
+                Copyright 2012-2014 B5M.COM版权所有
+            </div>
+        </div>
+    </footer>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/??extend/highlight.js,extend/parseTpl.js,core/gmu.js,core/event.js,core/event.js,core/widget.js,widget/dialog/dialog.js,widget/dialog/$position.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-cart/cart.js"></script>
+<script>
+$(function(){
+	wapCartFed.cartInit();
+});
+$(function() {
+	/************************* wap 公共登录 **************************/
+	b5mwap.namespace('ui.topMenu');
+	b5mwap.ui.topMenu = (function(){
+		
+		'use strict';
+		
+		var _this = this,
+			_html = "";
+			
+		_html = ' <div class="r-menu">'
+			+ '<i></i>'
+			+ '<a href="http://cart.m.b5m.com/"><em class="icon-menu-cart"></em>购物车</a>'
+			+ '<a href="http://m.b5m.com/"><em class="icon-menu-home"></em>首页</a>'
+			+ '<a href="http://s.m.b5m.com/"><em class="icon-menu-search"></em>搜索</a>'
+			+ '</div>';
+	
+		$("body").append(_html);
+	})();
+	//头部更多显示
+	$(".h-right").on("touchstart",'#topMenu',function(){
+		var $menu = $(".r-menu"),
+			isShow = $menu.css("display");
+		if(isShow == "none"){
+			$menu.show();
+		}else{
+			$menu.hide();
+		}
+	});
+});
+</script>
+</body>
+</html>

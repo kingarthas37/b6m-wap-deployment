@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="http://staticcdn.b5m.com/static/public/gmu/assets/??widget/dialog/dialog.css,widget/dialog/dialog.default.css,widget/button/button.css,widget/button/button.default.css" />
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/wap-reg/reg.less" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <input id="referer" type="hidden" />
+    <input id="sendRedirect" type="hidden" />
+    <header class="wap-header">
+        <div class="wap-topbar">
+            <div class="h-left"><a href="javascript:pageBack();" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+            <div class="h-center"><h1>登录</h1></div>
+            <div class="h-right">&nbsp;</div>
+        </div>
+    </header>
+    <section class="reg-main">
+        <form id="login-form" class="reg-form" method="post">
+            <div class="field username field-login field-login-username">
+                <div class="field-relative">
+                    <input class="reg-input" type="text" name="userName" placeholder="请输入手机号/邮箱" value="" autocomplete="off" />
+                    <a href="javascript:void(0);" class="icon-reg reg-empty" title="清空" style="display:none;">清空</a>
+                </div>
+                <div class="reg-error-box" style="display:none;"></div>
+            </div>
+            <div class="field psw field-login field-login-psw">
+                <div class="field-relative">
+                    <input class="reg-input" type="password" name="password" placeholder="请输入密码" value="" autocomplete="off" onpaste="return false;" oncopy="return false;" oncut="return false;" />
+                    <a href="javascript:void(0);" class="icon-reg reg-empty" title="清空" style="display:none;">清空</a>
+                </div>
+                <div class="reg-error-box" style="display:none;"></div>
+            </div>
+            <div class="field error-server">
+                <div id="server" class="reg-error-box" style="display:none;"></div>
+            </div>
+            <div class="field forget">
+                <a href="#">忘记密码？</a>
+            </div>
+            <div class="field submit-btn">
+                <input type="button" id="loginBtn" class="reg-btn dark-btn" value="登录" />
+                <input type="button" id="regLink" class="reg-btn light-btn mt10" value="注册"/>
+            </div>
+        </form>
+    </section>
+    <footer id="footer">
+        <div class="f-qk-tl">
+            <div class="f-login">
+                <a href="">登录</a>
+                &nbsp;|&nbsp;
+                <a href="">注册</a>
+            </div>
+            <div class="f-go-top">
+                <a href="">回到项部</a>
+            </div>
+        </div>
+        <div class="f-ch-cp">
+            <div class="item">
+                <a href="">标准版</a>
+                &nbsp;|&nbsp;
+                <a href="" class="cur">触屏版</a>
+            </div>
+            <div class="item">
+                Copyright 2012-2014 B5M.COM版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+    <script src="http://staticcdn.b5m.com/static/public/gmu/src/??extend/highlight.js,extend/parseTpl.js,core/gmu.js,core/event.js,core/event.js,core/widget.js,widget/dialog/dialog.js,widget/dialog/$position.js"></script>
+    <script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+    <script src="http://staticcdn.b5m.com/scripts/wap-reg/jquery-2.1.1.min.js"></script>
+    <script src="http://staticcdn.b5m.com/scripts/wap-reg/validate.min.js"></script>
+    <script src="../../scripts/wap-reg/reg.js"></script>
+    <script>
+        $(function(){
+            window.B5M_UC = {
+                rootPath:'http://172.16.5.24:8080',
+                ucRootPath:'http://ucenter.stage.bang5mai.com'
+            };
+            wapReg.loginFun();
+        });
+    </script>
+</body>
+</html>

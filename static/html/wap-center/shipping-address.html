@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+
+    <title>管理收货地址</title>
+
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/wap-center/index.less"/>
+</head>
+
+<body>
+    <header class="wap-header">
+        <div class="wap-topbar">
+            <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+            <div class="h-center"><h1>管理收货地址</h1></div>
+            <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+        </div>
+    </header>
+    <section>
+    <input type="hidden" id="userId" name="userId" value="ca1029d20b6740c2be097693059a78c2" />
+    	<div class="address-container">
+        	<div class="address-items checked">
+            	<a href="#">
+                    <em class="icon-checked"></em>
+                    <h3>冯某<span>13259685329</span></h3>
+                    <p><font>[默认]</font>上海市虹口区西江完路366号凯德龙梦之蓝B座502室</p>
+                    <em class="icon-right"></em>
+            	</a>
+            </div>
+        	<div class="address-items">
+            	<a href="#">
+                    <em class="icon-checked"></em>
+                    <h3>冯11某<span>13259685329</span></h3>
+                    <p>上海市虹口区西江完路366号凯德龙梦之蓝B座502室</p>
+                    <em class="icon-right"></em>
+            	</a>
+            </div>
+        	<div class="address-items">
+            	<a href="#">
+                    <em class="icon-checked"></em>
+                    <h3>冯22某<span>13259685329</span></h3>
+                    <p>上海市虹口区西江完路366号凯德龙梦之蓝B座502室</p>
+                    <em class="icon-right"></em>
+            	</a>
+            </div>
+        	<div class="address-items">
+            	<a href="#">
+                    <em class="icon-checked"></em>
+                    <h3>冯33某<span>13259685329</span></h3>
+                    <p>上海市虹口区西江完路366号凯德龙梦之蓝B座502室</p>
+                    <em class="icon-right"></em>
+            	</a>
+            </div>
+        	<div class="bottom-btn"><a href="#" class="btn-red">添加新地址</a></div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="f-qk-tl">
+            <div class="f-login">
+                <a href="">登录</a>
+                &nbsp;|&nbsp;
+                <a href="">注册</a>
+            </div>
+            <div class="f-go-top">
+                <a href="">回到项部</a>
+            </div>
+        </div>
+        <div class="f-ch-cp">
+            <div class="item">
+                <a href="">标准版</a>
+                &nbsp;|&nbsp;
+                <a href="" class="cur">触屏版</a>
+            </div>
+            <div class="item">
+                Copyright 2012-2014 B5M.COM版权所有
+            </div>
+        </div>
+    </footer>
+<script  src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-center/wap-center.js"></script>
+<script>
+$(function(){
+	wapCenterFed.addressList();
+});
+</script>
+</body>
+</html>

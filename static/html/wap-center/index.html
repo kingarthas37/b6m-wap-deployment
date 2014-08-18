@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+
+    <title>用户中心</title>
+
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../../css/wap-center/index.less"/>
+
+</head>
+
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+        <div class="h-center"><h1>注册</h1></div>
+        <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+    </div>
+</header>
+<div class="center-bann">
+	<div class="bann-name">
+		<span class="bann-nam-img"><img src="../../images/wap-center/center-img.jpg"></span>
+		<span class="bann-nam-mid">豚吞alink<em>LV1</em></span>
+	</div>
+</div>
+
+<section>
+	<div class="center-list">
+		<ul>
+			<li>
+				<a href="">
+					<span class="list-cart">我的购物车</span>
+					<span class="list-pic"></span>
+                    <span id="myCart" class="numbe-bg"></span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="list-cart list-order">我的订单</span>
+					<span class="list-pic"></span>
+					<span class="numbe-bg">123</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="list-cart list-addres">我的收货地址</span>
+					<span class="list-pic"></span>
+				</a>
+			</li>
+            <li>
+                <a href="">
+                    <span class="list-cart list-collection">我的收藏</span>
+                    <span class="list-pic"></span>
+                </a>
+            </li>
+		</ul>
+	</div>
+</section>
+	
+
+
+<footer id="footer">
+    <div class="f-qk-tl">
+        <div class="f-login">
+            <a href="">登录</a>
+            <span>|</span>
+            <a href="">注册</a>
+        </div>
+        <div class="f-go-top">
+            <a href="">回到项部</a>
+        </div>
+    </div>
+    <div class="f-ch-cp">
+        <div class="item">
+            <a href="">标准版</a>
+            &nbsp;|&nbsp;
+            <a href="" class="cur">触屏版</a>
+        </div>
+        <div class="item">
+            Copyright 2012-2014 B5M.COM版权所有
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script  src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script type="text/javascript">
+    $.getJSON('http://cart.m.b5m.com/get_product_num?jsonpCallback=?',function(data){
+        if (data.count != undefined || data.count != '')
+            $('#myCart').html(data.count);
+    });
+</script>
+</body>
+</html>

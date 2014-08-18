@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>我的收藏</title>
+    <link rel="stylesheet" type="text/css" href="http://staticcdn.b5m.com/static/public/gmu/assets/??widget/dialog/dialog.css,widget/dialog/dialog.default.css,widget/button/button.css,widget/button/button.default.css,widget/refresh/refresh.default.css" />
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="../../css/wap-center/index.less"/>
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+        <div class="h-center"><h1>我的收藏</h1></div>
+        <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+    </div>
+</header>
+<section class="special-sale-new">
+    <div class="center-list center-no-roder" style="display:none;">
+		<span class="favorite-pic"></span>
+		<span class="no-order">您还没有收藏任何商品哦</span>
+		<a class="roder-button" href="">去逛逛</a>
+	</div>
+    <div class="sale-list ui-refresh" style="display:none;">
+        <ul class="data-list">
+          <!--<li>
+                <a class="sale-list-pic pic-top" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic pic-top" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>
+            <li>
+                <a class="sale-list-pic" href=""><img src="http://placehold.it/140x140"></a>
+                <a class="sale-list-font" href="">韩版背带牛仔连衣裙韩版背带牛仔连衣裙</a>
+                <p class="sale-list-price">收藏价：&yen;2305.00</p>
+                <p class="sale-list-price">现价：<span class="list-price-red">&yen;2305.00</span></p>
+                <a class="right-btn"><span class="btn-dele">删除</span></a>
+            </li>-->
+        </ul>
+        <div class="sale-loading ui-refresh-down"></div>
+    </div>
+</section>
+<script  src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/??extend/highlight.js,extend/parseTpl.js,core/gmu.js,core/event.js,core/widget.js,widget/dialog/dialog.js,widget/dialog/$position.js,widget/refresh/refresh.js,widget/refresh/$lite.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-center/wap-center.js"></script>
+<script>
+$(function(){
+	wapCenterFed.apiUrl = "http://ucenter.stage.bang5mai.com";
+	wapCenterFed.favoriteList();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>订单详情</title>
+    <link rel="stylesheet" type="text/css" href="http://staticcdn.b5m.com/static/public/gmu/assets/??widget/dialog/dialog.css,widget/dialog/dialog.default.css,widget/button/button.css,widget/button/button.default.css" />
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/wap-center/index.less"/>
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+        <div class="h-center"><h1>订单详情</h1></div>
+        <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+    </div>
+</header>
+<!--<div class="center-bann">
+	<div class="bann-name">
+		<span class="bann-nam-img"><img src="../../images/wap-center/center-img.jpg"></span>
+		<span class="bann-nam-mid">豚吞alink<em>LV1</em></span>
+	</div>
+</div>-->
+<section>
+    <input type="hidden" id="orderNum" name="orderNum" value="DG201407154205386d" />
+    <div class="order-deta-box">
+        <div class="order-deta-titl">
+            <!--<span>订单状态：<dfn>已付款</dfn></span>
+            <span>订单号：<b>1210214210</b></span>-->
+        </div>
+        <div class="order-deta-list">
+            <!--<ul>
+                <li>
+                    <a href="" class="deta-list-img"><img src="../../images/wap-center/center-deat-img.jpg"></a>
+                    <span class="deta-list-mid">
+                        <a class="" href="">无愁河的浪荡汉子朱雀城（套装共3册（随机赠送黄永玉手绘珍藏作品...</a>
+                        <span>数量：1</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="" class="deta-list-img"><img src="../../images/wap-center/center-deat-img.jpg"></a>
+                    <span class="deta-list-mid">
+                        <a href="">无愁河的浪荡汉子朱雀城（套装共3册（随机赠送黄永玉手绘珍藏作品...</a>
+                        <span>数量：1</span>
+                    </span>
+                </li>
+            </ul>
+            <p>下单时间：<span>2014-06.23</span></p>
+            <p>收件人：<span>2014-06.23</span></p>
+            <p>收货地址：<span>上海市 浦东新区 商城路 1258弄 2号鄂尔多斯大厦 1201室</span></p>
+            <p>运费：<span>免运费</span></p>
+            <p>总计：<span><b>&yen;200.36</b></span></p>-->
+        </div>
+    </div>
+</section>
+<!--<footer id="footer">
+    <div class="f-qk-tl">
+        <div class="f-login">
+            <a href="">登录</a>
+            &nbsp;|&nbsp;
+            <a href="">注册</a>
+        </div>
+        <div class="f-go-top">
+            <a href="">回到项部</a>
+        </div>
+    </div>
+    <div class="f-ch-cp">
+        <div class="item">
+            <a href="">标准版</a>
+            &nbsp;|&nbsp;
+            <a href="" class="cur">触屏版</a>
+        </div>
+        <div class="item">
+            Copyright 2012-2014 B5M.COM版权所有
+        </div>
+    </div>
+</footer>-->
+<script  src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/??extend/highlight.js,extend/parseTpl.js,core/gmu.js,core/event.js,core/event.js,core/widget.js,widget/dialog/dialog.js,widget/dialog/$position.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-center/wap-center.js"></script>
+<script>
+$(function(){
+	wapCenterFed.apiUrl = "http://ucenter.stage.bang5mai.com";
+	wapCenterFed.payUrl = "http://pay.m.stage.b5m.com";
+	wapCenterFed.orderDetail();
+});
+</script>
+</body>
+</html>

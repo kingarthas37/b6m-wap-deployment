@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>我的订单</title>
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/wap-cart/style.less"/>
+</head>
+
+<body>
+    <header class="wap-header">
+        <div class="wap-topbar">
+            <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+            <div class="h-center"><h1>我的订单</h1></div>
+            <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+        </div>
+    </header>
+    <section>
+    	<div class="orders-container">
+        	<div class="orders-address-add"><a href="http://www.baidu.com">+添加收货地址</a></div>
+        	<div class="orders-address">
+            	<a href="#">
+                <h3><em class="icon-tage"></em>收货人：冯某</h3>
+                <p>收货地址：上海市虹口区西江完路366号凯德龙梦之蓝B座502室</p>
+                <em class="icon-right"></em>
+            	</a>
+            </div>
+            <div class="orders-items">
+                <a href="#" class="cart-items-pic" ><img src="http://lorempixum.com/g/60/60" width="60" height="60" /></a>
+                <p><a href="#">珂莱蒂尔Koradio正品女装夏款柜同款气质</a></p>
+                <p>
+                    <span class="grey">价格：200.36</span>
+                    <span class="grey">数量：1</span>
+                </p>
+                <p>
+                    <span class="grey">颜色：红色</span>
+                    <span class="grey">尺寸：XLL</span>
+                </p>
+            </div> 
+            <div class="orders-list orders-payment">
+            	<span class="list-l"><em>￥</em>支付方式</span>
+            	<span class="list-r"><em class="icon-up"></em></span>
+            </div>    
+            <div class="orders-list orders-payment-items">
+            	<label>
+                    <span class="list-l"><em class="icon-taobao"></em>支付宝支付</span>
+                    <span class="list-r"> <input type="radio" value="alipay" name="defaultBank" class="pay-radio" data-id="0" id="payOnline_zfb" checked></span>
+                </label>
+            </div>       
+            <div class="orders-list">
+            	<span class="list-l">商品价格</span>
+            	<span class="list-r">￥200.36</span>
+            </div>       
+            <div class="orders-list">
+            	<span class="list-l">运费总额20元以内</span>
+            	<span class="list-r"><em class="icon-no-freight"></em>免运费</span>
+            </div>  
+            <div class="orders-list orders-payment-items">
+                <span class="list-l">运费总额20元以内免费，超过20元客服联系您添加运费</span>
+            </div>       
+            <div class="orders-list">
+            	<span class="list-l"><b class="grey">总计</b></span>
+            	<span class="list-r red">￥<b>200.36</b></span>
+            </div> 
+        	<div class="bottom-btn"><a href="#" class="btn-red">确认购买</a></div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="f-qk-tl">
+            <div class="f-login">
+                <a href="">登录</a>
+                &nbsp;|&nbsp;
+                <a href="">注册</a>
+            </div>
+            <div class="f-go-top">
+                <a href="">回到项部</a>
+            </div>
+        </div>
+        <div class="f-ch-cp">
+            <div class="item">
+                <a href="">标准版</a>
+                &nbsp;|&nbsp;
+                <a href="" class="cur">触屏版</a>
+            </div>
+            <div class="item">
+                Copyright 2012-2014 B5M.COM版权所有
+            </div>
+        </div>
+    </footer>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/static/public/gmu/src/??extend/highlight.js,extend/parseTpl.js,core/gmu.js,core/event.js,core/event.js,core/widget.js,widget/dialog/dialog.js,widget/dialog/$position.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-cart/cart.js"></script>
+<script>
+$(function(){
+	wapCartFed.orderInit();
+});
+</script>
+</body>
+</html>

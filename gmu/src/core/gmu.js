@@ -1,0 +1,1 @@
+var gmu=gmu||{version:"@version",$:window.Zepto,staticCall:function(n){var t=n.fn,e=[].slice,r=n();return r.length=1,function(n,a){return r[0]=n,t[a].apply(r,e.call(arguments,2))}}(Zepto)};

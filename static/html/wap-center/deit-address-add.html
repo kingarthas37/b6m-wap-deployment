@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>新增收货地址</title>
+    <link href="http://staticcdn.b5m.com/css/wap/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/wap-center/index.less"/>
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="#" title="返回"><i class="reg-lt-outer"></i><i class="reg-lt-inner"></i></a></div>
+        <div class="h-center"><h1>新增收货地址</h1></div>
+        <div class="h-right"><a id="topMenu"><em class="icon-more"></em></a></div>
+    </div>
+</header>
+<section>
+	<form id="saveForm" name="saveForm" action="" method="post" >
+    <input type="hidden" name="userId" value="" />
+    <input type="hidden" id="def" name="def" value="" />
+	<div class="deit-addre-input">
+        <span><label><font class="red">*</font>省份：</label><select class="deit-icon-input" name="provinceName" id="provinceName"><option value="">请选择省市</option></select></span>
+		<span><label><font class="red">*</font>城市：</label><select class="deit-icon-input" name="cityName" id="cityName"><option value="">请选择城市</option></select></span>
+		<span><label><font class="red">*</font>地区：</label><select class="deit-icon-input" name="districtName" id="districtName"><option value="">请选择区/县</option></select></span>
+	</div>
+	<div class="order-deta-list deit-addre">
+		<p><font class="red">*</font>详细地址：<span><textarea name="detailAddress" rows="3" maxlength="120"></textarea></span></p>
+        
+		<p><font class="red">*</font>收货人姓名：<span><input type="text" name="userName" value="" maxlength="10" /></span></p>
+		<p><font class="red">*</font>手机号码：<span><input type="tel" name="mobile" value="" maxlength="11" /></span></p>
+		<p>邮编：<span><input type="tel" name="zipcode" value="" maxlength="6" /></span></p>
+		<p id="address_def">
+			<span class="deit-default">设为默认地址</span>
+			<span class="deit-img"></span>
+		</p>
+		<p>
+			<a class="deit-save add-save" >保&nbsp;&nbsp;存</a>
+		</p>
+	</div>
+    </form>
+</section>
+<footer id="footer">
+    <div class="f-qk-tl">
+        <div class="f-login">
+            <a href="">登录</a>
+            &nbsp;|&nbsp;
+            <a href="">注册</a>
+        </div>
+        <div class="f-go-top">
+            <a href="">回到项部</a>
+        </div>
+    </div>
+    <div class="f-ch-cp">
+        <div class="item">
+            <a href="">标准版</a>
+            &nbsp;|&nbsp;
+            <a href="" class="cur">触屏版</a>
+        </div>
+        <div class="item">
+            Copyright 2012-2014 B5M.COM版权所有
+        </div>
+    </div>
+</footer>
+<script  src="http://staticcdn.b5m.com/static/public/gmu/src/zepto/zepto.js"></script>
+<script src="http://staticcdn.b5m.com/scripts/wap/common.js"></script>
+<script  src="../../scripts/wap-center/wap-center.js"></script>
+<script>
+$(function(){
+	wapCenterFed.apiUrl = "http://ucenter.stage.bang5mai.com";
+	wapCenterFed.setSelect("provinceName","cityName","districtName");
+	wapCenterFed.addressDetail();
+});
+</script>
+</body>
+</html>
